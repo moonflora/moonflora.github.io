@@ -181,6 +181,8 @@ Headings
 ========================================================================== */
 
 .hero h1 { font-size: 60px; font-weight: 500; color: rgb(0, 0, 0); letter-spacing: -1px; margin: 100px 0 20px 0; }
+.hero2 h1 { font-size: 60px; font-weight: 500; color: rgb(0, 0, 0); letter-spacing: -1px; margin: 100px 0 20px 0; }
+
 .download-now h1 { font-size: 55px; font-weight: 100; color: #fff; margin: 100px 0 20px 0; }
 .info h1 { font-size: 55px; font-weight: 100; color: #fff; margin: 40px 0 20px 0; }
 .testimonials h1 { color: #fff; font-size: 43px; font-weight: 100; margin: 20px 0 80px 0; font-style: italic; }
@@ -189,7 +191,6 @@ Headings
 /* ==========================================================================
 Custom Styles
 ========================================================================== */
-
 
 
 p { font-weight: 300; }
@@ -208,6 +209,10 @@ nav ul li a:hover, nav ul li a:focus { color: rgba(255, 255, 255, 1); text-decor
 .get-started-btn:hover, .get-started-btn:focus { text-decoration: none; background-color: #e8b968; }
 .download-now { background: #000000 url('../img/moonflora_00000.png') no-repeat right 65px; background-size: 40%; }
 .download-now p { color: #fff; font-size: 16px; margin: 40px 30px 40px 0; line-height: 30px; }
+
+.hero2 { background: url('../img/cryptoflora_00028.png') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0; height: auto; }
+.hero2 p { color: #000000; font-style: italic; font-size: 22px; font-weight: 400; }
+.hero2 a { color: rgb(255, 255, 255); }
 
 .title-link a { color: rgb(0, 0, 0); }
 
@@ -309,3 +314,114 @@ Waypoints
 ========================================================================== */
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 { visibility: hidden; }
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD { visibility: visible; }
+
+/*-------------------
+Modal
+---------------------*/
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 0; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100vmin; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,1); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    left: 0;
+    width: 100vmin;
+    max-width: 2000px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    font-size: 20px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 2000px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0 0 0;
+    /*height: 150px;*/
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index:2;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 2000px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%) rotate(-30deg);;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 0 0 rgb(255, 255, 255), 0 -2px 0 rgb(255, 255, 255), 0 2px 0 #fff, -2px 0 0 #fff;
+  }
+  .centereds {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%) rotate(-30deg);;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 0 0 rgb(255, 255, 255), 0 -2px 0 rgb(255, 255, 255), 0 2px 0 #fff, -2px 0 0 #fff;
+  }

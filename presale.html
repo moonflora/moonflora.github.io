@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moonflora</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <link href="css/styles.css?v=1.6" rel="stylesheet">
+    <link href="css/queries.css?v=1.6" rel="stylesheet">
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+      <section class="navigation">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+              <nav class="pull">
+                <ul class="top-nav">
+                  <li><a href="#getstarted">Introduction<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                  <li><a href="#features">About the Artist <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                  <li><a href="#how-it-works">How it works<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                  <li><a href="#grafting">Grafting<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                  <li><a href="#grafting-calc">Grafting Calculator<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                  <li class="nav-last"><a href="https://twitter.com/PobbleArt">Contact <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hero2" id="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <a href="#"><i class="fa fa-navicon fa-2x nav_slide_button"></i></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+              <h1 class="animated bounceInDown">Moonflora Pre-Sale</h1>
+              <p class="animated fadeInUpDelay">
+                Reserve your Moonflora on Discord
+              </p> 
+              <p class="animated fadeInUpDelay title-link">
+                <a href="https://discord.gg/qS3RrQPfqc">https://discord.gg/qS3RrQPfqc</Discord></a>
+              </p>
+              <p class="animated fadeInUpDelay">
+                Click on a Moonflora to enlarge it, and find its number
+              </p>
+              <p class="animated fadeInUpDelay title-link">
+                by <a href="https://twitter.com/PobbleArt">@PobbleArt</a>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2 col-md-offset-5 text-center">
+              <!--<div class="hero-play-btn"></div>-->
+            </div>
+           
+          </div>
+
+        </div>
+        </section>
+      <div id="myModal" class="modal">
+        <span class="close2">&times;</span>
+        <div id="caption"></div>
+        <img class="modal-content" id="modal_img">
+        
+      </div>
+
+      <section class="info" id="presale_0">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora0" src="img_small/moonflora_00000.png" alt="Moonflora 0" class="img-fluid" width="100%" >
+                    <div id="reserved0" class="centered" style="display:none">Reserved</div>
+                    <div id="sold0" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora1" src="img_small/moonflora_00001.png" alt="Moonflora 1" class="img-fluid" width="100%" >
+                    <div id="reserved1" class="centered" style="display:none">Reserved</div>
+                    <div id="sold1" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora2" src="img_small/moonflora_00002.png" alt="Moonflora 2" class="img-fluid" width="100%" >
+                    <div id="reserved2" class="centered" style="display:none">Reserved</div>
+                    <div id="sold2" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora3" src="img_small/moonflora_00003.png" alt="Moonflora 3" class="img-fluid" width="100%" >
+                    <div id="reserved3" class="centered" style="display:none">Reserved</div>
+                    <div id="sold3" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_1">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora4" src="img_small/moonflora_00004.png" alt="Moonflora 4" class="img-fluid" width="100%" >
+                    <div id="reserved4" class="centered" style="display:none">Reserved</div>
+                    <div id="sold4" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora5" src="img_small/moonflora_00005.png" alt="Moonflora 5" class="img-fluid" width="100%" >
+                    <div id="reserved5" class="centered" style="display:none">Reserved</div>
+                    <div id="sold5" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora6" src="img_small/moonflora_00006.png" alt="Moonflora 6" class="img-fluid" width="100%" >
+                    <div id="reserved6" class="centered" style="display:none">Reserved</div>
+                    <div id="sold6" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora7" src="img_small/moonflora_00007.png" alt="Moonflora 7" class="img-fluid" width="100%" >
+                    <div id="reserved7" class="centered" style="display:none">Reserved</div>
+                    <div id="sold7" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_2">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora8" src="img_small/moonflora_00008.png" alt="Moonflora 8" class="img-fluid" width="100%" >
+                    <div id="reserved8" class="centered" style="display:none">Reserved</div>
+                    <div id="sold8" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora9" src="img_small/moonflora_00009.png" alt="Moonflora 9" class="img-fluid" width="100%" >
+                    <div id="reserved9" class="centered" style="display:none">Reserved</div>
+                    <div id="sold9" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora10" src="img_small/moonflora_00010.png" alt="Moonflora 10" class="img-fluid" width="100%" >
+                    <div id="reserved10" class="centered" style="display:none">Reserved</div>
+                    <div id="sold10" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora11" src="img_small/moonflora_00011.png" alt="Moonflora 11" class="img-fluid" width="100%" >
+                    <div id="reserved11" class="centered" style="display:none">Reserved</div>
+                    <div id="sold11" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_3">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora12" src="img_small/moonflora_00012.png" alt="Moonflora 12" class="img-fluid" width="100%" >
+                    <div id="reserved12" class="centered" style="display:none">Reserved</div>
+                    <div id="sold12" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora13" src="img_small/moonflora_00013.png" alt="Moonflora 13" class="img-fluid" width="100%" >
+                    <div id="reserved13" class="centered" style="display:none">Reserved</div>
+                    <div id="sold13" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora14" src="img_small/moonflora_00014.png" alt="Moonflora 14" class="img-fluid" width="100%" >
+                    <div id="reserved14" class="centered" style="display:none">Reserved</div>
+                    <div id="sold14" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora15" src="img_small/moonflora_00015.png" alt="Moonflora 15" class="img-fluid" width="100%" >
+                    <div id="reserved15" class="centered" style="display:none">Reserved</div>
+                    <div id="sold15" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_4">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora16" src="img_small/moonflora_00016.png" alt="Moonflora 16" class="img-fluid" width="100%" >
+                    <div id="reserved16" class="centered" style="display:none">Reserved</div>
+                    <div id="sold16" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora17" src="img_small/moonflora_00017.png" alt="Moonflora 17" class="img-fluid" width="100%" >
+                    <div id="reserved17" class="centered" style="display:none">Reserved</div>
+                    <div id="sold17" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora18" src="img_small/moonflora_00018.png" alt="Moonflora 18" class="img-fluid" width="100%" >
+                    <div id="reserved18" class="centered" style="display:none">Reserved</div>
+                    <div id="sold18" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora19" src="img_small/moonflora_00019.png" alt="Moonflora 19" class="img-fluid" width="100%" >
+                    <div id="reserved19" class="centered" style="display:none">Reserved</div>
+                    <div id="sold19" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_5">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora20" src="img_small/moonflora_00020.png" alt="Moonflora 20" class="img-fluid" width="100%" >
+                    <div id="reserved20" class="centered" style="display:none">Reserved</div>
+                    <div id="sold20" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora21" src="img_small/moonflora_00021.png" alt="Moonflora 21" class="img-fluid" width="100%" >
+                    <div id="reserved21" class="centered" style="display:none">Reserved</div>
+                    <div id="sold21" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora22" src="img_small/moonflora_00022.png" alt="Moonflora 22" class="img-fluid" width="100%" >
+                    <div id="reserved22" class="centered" style="display:none">Reserved</div>
+                    <div id="sold22" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora23" src="img_small/moonflora_00023.png" alt="Moonflora 23" class="img-fluid" width="100%" >
+                    <div id="reserved23" class="centered" style="display:none">Reserved</div>
+                    <div id="sold23" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_6">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora24" src="img_small/moonflora_00024.png" alt="Moonflora 24" class="img-fluid" width="100%" >
+                    <div id="reserved24" class="centered" style="display:none">Reserved</div>
+                    <div id="sold24" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora25" src="img_small/moonflora_00025.png" alt="Moonflora 25" class="img-fluid" width="100%" >
+                    <div id="reserved25" class="centered" style="display:none">Reserved</div>
+                    <div id="sold25" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora26" src="img_small/moonflora_00026.png" alt="Moonflora 26" class="img-fluid" width="100%" >
+                    <div id="reserved26" class="centered" style="display:none">Reserved</div>
+                    <div id="sold26" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora27" src="img_small/moonflora_00027.png" alt="Moonflora 27" class="img-fluid" width="100%" >
+                    <div id="reserved27" class="centered" style="display:none">Reserved</div>
+                    <div id="sold27" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_7">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora28" src="img_small/moonflora_00028.png" alt="Moonflora 28" class="img-fluid" width="100%" >
+                    <div id="reserved28" class="centered" style="display:none">Reserved</div>
+                    <div id="sold28" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora29" src="img_small/moonflora_00029.png" alt="Moonflora 29" class="img-fluid" width="100%" >
+                    <div id="reserved29" class="centered" style="display:none">Reserved</div>
+                    <div id="sold29" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora30" src="img_small/moonflora_00030.png" alt="Moonflora 30" class="img-fluid" width="100%" >
+                    <div id="reserved30" class="centered" style="display:none">Reserved</div>
+                    <div id="sold30" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora31" src="img_small/moonflora_00031.png" alt="Moonflora 31" class="img-fluid" width="100%" >
+                    <div id="reserved31" class="centered" style="display:none">Reserved</div>
+                    <div id="sold31" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_8">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora32" src="img_small/moonflora_00032.png" alt="Moonflora 32" class="img-fluid" width="100%" >
+                    <div id="reserved32" class="centered" style="display:none">Reserved</div>
+                    <div id="sold32" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora33" src="img_small/moonflora_00033.png" alt="Moonflora 33" class="img-fluid" width="100%" >
+                    <div id="reserved33" class="centered" style="display:none">Reserved</div>
+                    <div id="sold33" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora34" src="img_small/moonflora_00034.png" alt="Moonflora 34" class="img-fluid" width="100%" >
+                    <div id="reserved34" class="centered" style="display:none">Reserved</div>
+                    <div id="sold34" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora35" src="img_small/moonflora_00035.png" alt="Moonflora 35" class="img-fluid" width="100%" >
+                    <div id="reserved35" class="centered" style="display:none">Reserved</div>
+                    <div id="sold35" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_9">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora36" src="img_small/moonflora_00036.png" alt="Moonflora 36" class="img-fluid" width="100%" >
+                    <div id="reserved36" class="centered" style="display:none">Reserved</div>
+                    <div id="sold36" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora37" src="img_small/moonflora_00037.png" alt="Moonflora 37" class="img-fluid" width="100%" >
+                    <div id="reserved37" class="centered" style="display:none">Reserved</div>
+                    <div id="sold37" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora38" src="img_small/moonflora_00038.png" alt="Moonflora 38" class="img-fluid" width="100%" >
+                    <div id="reserved38" class="centered" style="display:none">Reserved</div>
+                    <div id="sold38" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora39" src="img_small/moonflora_00039.png" alt="Moonflora 39" class="img-fluid" width="100%" >
+                    <div id="reserved39" class="centered" style="display:none">Reserved</div>
+                    <div id="sold39" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_10">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora40" src="img_small/moonflora_00040.png" alt="Moonflora 40" class="img-fluid" width="100%" >
+                    <div id="reserved40" class="centered" style="display:none">Reserved</div>
+                    <div id="sold40" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora41" src="img_small/moonflora_00041.png" alt="Moonflora 41" class="img-fluid" width="100%" >
+                    <div id="reserved41" class="centered" style="display:none">Reserved</div>
+                    <div id="sold41" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora42" src="img_small/moonflora_00042.png" alt="Moonflora 42" class="img-fluid" width="100%" >
+                    <div id="reserved42" class="centered" style="display:none">Reserved</div>
+                    <div id="sold42" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora43" src="img_small/moonflora_00043.png" alt="Moonflora 43" class="img-fluid" width="100%" >
+                    <div id="reserved43" class="centered" style="display:none">Reserved</div>
+                    <div id="sold43" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_11">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora44" src="img_small/moonflora_00044.png" alt="Moonflora 44" class="img-fluid" width="100%" >
+                    <div id="reserved44" class="centered" style="display:none">Reserved</div>
+                    <div id="sold44" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora45" src="img_small/moonflora_00045.png" alt="Moonflora 45" class="img-fluid" width="100%" >
+                    <div id="reserved45" class="centered" style="display:none">Reserved</div>
+                    <div id="sold45" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora46" src="img_small/moonflora_00046.png" alt="Moonflora 46" class="img-fluid" width="100%" >
+                    <div id="reserved46" class="centered" style="display:none">Reserved</div>
+                    <div id="sold46" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora47" src="img_small/moonflora_00047.png" alt="Moonflora 47" class="img-fluid" width="100%" >
+                    <div id="reserved47" class="centered" style="display:none">Reserved</div>
+                    <div id="sold47" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_12">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora48" src="img_small/moonflora_00048.png" alt="Moonflora 48" class="img-fluid" width="100%" >
+                    <div id="reserved48" class="centered" style="display:none">Reserved</div>
+                    <div id="sold48" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora49" src="img_small/moonflora_00049.png" alt="Moonflora 49" class="img-fluid" width="100%" >
+                    <div id="reserved49" class="centered" style="display:none">Reserved</div>
+                    <div id="sold49" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora50" src="img_small/moonflora_00050.png" alt="Moonflora 50" class="img-fluid" width="100%" >
+                    <div id="reserved50" class="centered" style="display:none">Reserved</div>
+                    <div id="sold50" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora51" src="img_small/moonflora_00051.png" alt="Moonflora 51" class="img-fluid" width="100%" >
+                    <div id="reserved51" class="centered" style="display:none">Reserved</div>
+                    <div id="sold51" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_13">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora52" src="img_small/moonflora_00052.png" alt="Moonflora 52" class="img-fluid" width="100%" >
+                    <div id="reserved52" class="centered" style="display:none">Reserved</div>
+                    <div id="sold52" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora53" src="img_small/moonflora_00053.png" alt="Moonflora 53" class="img-fluid" width="100%" >
+                    <div id="reserved53" class="centered" style="display:none">Reserved</div>
+                    <div id="sold53" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora54" src="img_small/moonflora_00054.png" alt="Moonflora 54" class="img-fluid" width="100%" >
+                    <div id="reserved54" class="centered" style="display:none">Reserved</div>
+                    <div id="sold54" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora55" src="img_small/moonflora_00055.png" alt="Moonflora 55" class="img-fluid" width="100%" >
+                    <div id="reserved55" class="centered" style="display:none">Reserved</div>
+                    <div id="sold55" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_14">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora56" src="img_small/moonflora_00056.png" alt="Moonflora 56" class="img-fluid" width="100%" >
+                    <div id="reserved56" class="centered" style="display:none">Reserved</div>
+                    <div id="sold56" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora57" src="img_small/moonflora_00057.png" alt="Moonflora 57" class="img-fluid" width="100%" >
+                    <div id="reserved57" class="centered" style="display:none">Reserved</div>
+                    <div id="sold57" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora58" src="img_small/moonflora_00058.png" alt="Moonflora 58" class="img-fluid" width="100%" >
+                    <div id="reserved58" class="centered" style="display:none">Reserved</div>
+                    <div id="sold58" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora59" src="img_small/moonflora_00059.png" alt="Moonflora 59" class="img-fluid" width="100%" >
+                    <div id="reserved59" class="centered" style="display:none">Reserved</div>
+                    <div id="sold59" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_15">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora60" src="img_small/moonflora_00060.png" alt="Moonflora 60" class="img-fluid" width="100%" >
+                    <div id="reserved60" class="centered" style="display:none">Reserved</div>
+                    <div id="sold60" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora61" src="img_small/moonflora_00061.png" alt="Moonflora 61" class="img-fluid" width="100%" >
+                    <div id="reserved61" class="centered" style="display:none">Reserved</div>
+                    <div id="sold61" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora62" src="img_small/moonflora_00062.png" alt="Moonflora 62" class="img-fluid" width="100%" >
+                    <div id="reserved62" class="centered" style="display:none">Reserved</div>
+                    <div id="sold62" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora63" src="img_small/moonflora_00063.png" alt="Moonflora 63" class="img-fluid" width="100%" >
+                    <div id="reserved63" class="centered" style="display:none">Reserved</div>
+                    <div id="sold63" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_16">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora64" src="img_small/moonflora_00064.png" alt="Moonflora 64" class="img-fluid" width="100%" >
+                    <div id="reserved64" class="centered" style="display:none">Reserved</div>
+                    <div id="sold64" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora65" src="img_small/moonflora_00065.png" alt="Moonflora 65" class="img-fluid" width="100%" >
+                    <div id="reserved65" class="centered" style="display:none">Reserved</div>
+                    <div id="sold65" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora66" src="img_small/moonflora_00066.png" alt="Moonflora 66" class="img-fluid" width="100%" >
+                    <div id="reserved66" class="centered" style="display:none">Reserved</div>
+                    <div id="sold66" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora67" src="img_small/moonflora_00067.png" alt="Moonflora 67" class="img-fluid" width="100%" >
+                    <div id="reserved67" class="centered" style="display:none">Reserved</div>
+                    <div id="sold67" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_17">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora68" src="img_small/moonflora_00068.png" alt="Moonflora 68" class="img-fluid" width="100%" >
+                    <div id="reserved68" class="centered" style="display:none">Reserved</div>
+                    <div id="sold68" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora69" src="img_small/moonflora_00069.png" alt="Moonflora 69" class="img-fluid" width="100%" >
+                    <div id="reserved69" class="centered" style="display:none">Reserved</div>
+                    <div id="sold69" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora70" src="img_small/moonflora_00070.png" alt="Moonflora 70" class="img-fluid" width="100%" >
+                    <div id="reserved70" class="centered" style="display:none">Reserved</div>
+                    <div id="sold70" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora71" src="img_small/moonflora_00071.png" alt="Moonflora 71" class="img-fluid" width="100%" >
+                    <div id="reserved71" class="centered" style="display:none">Reserved</div>
+                    <div id="sold71" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_18">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora72" src="img_small/moonflora_00072.png" alt="Moonflora 72" class="img-fluid" width="100%" >
+                    <div id="reserved72" class="centered" style="display:none">Reserved</div>
+                    <div id="sold72" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora73" src="img_small/moonflora_00073.png" alt="Moonflora 73" class="img-fluid" width="100%" >
+                    <div id="reserved73" class="centered" style="display:none">Reserved</div>
+                    <div id="sold73" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora74" src="img_small/moonflora_00074.png" alt="Moonflora 74" class="img-fluid" width="100%" >
+                    <div id="reserved74" class="centered" style="display:none">Reserved</div>
+                    <div id="sold74" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora75" src="img_small/moonflora_00075.png" alt="Moonflora 75" class="img-fluid" width="100%" >
+                    <div id="reserved75" class="centered" style="display:none">Reserved</div>
+                    <div id="sold75" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_19">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora76" src="img_small/moonflora_00076.png" alt="Moonflora 76" class="img-fluid" width="100%" >
+                    <div id="reserved76" class="centered" style="display:none">Reserved</div>
+                    <div id="sold76" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora77" src="img_small/moonflora_00077.png" alt="Moonflora 77" class="img-fluid" width="100%" >
+                    <div id="reserved77" class="centered" style="display:none">Reserved</div>
+                    <div id="sold77" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora78" src="img_small/moonflora_00078.png" alt="Moonflora 78" class="img-fluid" width="100%" >
+                    <div id="reserved78" class="centered" style="display:none">Reserved</div>
+                    <div id="sold78" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora79" src="img_small/moonflora_00079.png" alt="Moonflora 79" class="img-fluid" width="100%" >
+                    <div id="reserved79" class="centered" style="display:none">Reserved</div>
+                    <div id="sold79" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_20">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora80" src="img_small/moonflora_00080.png" alt="Moonflora 80" class="img-fluid" width="100%" >
+                    <div id="reserved80" class="centered" style="display:none">Reserved</div>
+                    <div id="sold80" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora81" src="img_small/moonflora_00081.png" alt="Moonflora 81" class="img-fluid" width="100%" >
+                    <div id="reserved81" class="centered" style="display:none">Reserved</div>
+                    <div id="sold81" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora82" src="img_small/moonflora_00082.png" alt="Moonflora 82" class="img-fluid" width="100%" >
+                    <div id="reserved82" class="centered" style="display:none">Reserved</div>
+                    <div id="sold82" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora83" src="img_small/moonflora_00083.png" alt="Moonflora 83" class="img-fluid" width="100%" >
+                    <div id="reserved83" class="centered" style="display:none">Reserved</div>
+                    <div id="sold83" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_21">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora84" src="img_small/moonflora_00084.png" alt="Moonflora 84" class="img-fluid" width="100%" >
+                    <div id="reserved84" class="centered" style="display:none">Reserved</div>
+                    <div id="sold84" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora85" src="img_small/moonflora_00085.png" alt="Moonflora 85" class="img-fluid" width="100%" >
+                    <div id="reserved85" class="centered" style="display:none">Reserved</div>
+                    <div id="sold85" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora86" src="img_small/moonflora_00086.png" alt="Moonflora 86" class="img-fluid" width="100%" >
+                    <div id="reserved86" class="centered" style="display:none">Reserved</div>
+                    <div id="sold86" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora87" src="img_small/moonflora_00087.png" alt="Moonflora 87" class="img-fluid" width="100%" >
+                    <div id="reserved87" class="centered" style="display:none">Reserved</div>
+                    <div id="sold87" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_22">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora88" src="img_small/moonflora_00088.png" alt="Moonflora 88" class="img-fluid" width="100%" >
+                    <div id="reserved88" class="centered" style="display:none">Reserved</div>
+                    <div id="sold88" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora89" src="img_small/moonflora_00089.png" alt="Moonflora 89" class="img-fluid" width="100%" >
+                    <div id="reserved89" class="centered" style="display:none">Reserved</div>
+                    <div id="sold89" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora90" src="img_small/moonflora_00090.png" alt="Moonflora 90" class="img-fluid" width="100%" >
+                    <div id="reserved90" class="centered" style="display:none">Reserved</div>
+                    <div id="sold90" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora91" src="img_small/moonflora_00091.png" alt="Moonflora 91" class="img-fluid" width="100%" >
+                    <div id="reserved91" class="centered" style="display:none">Reserved</div>
+                    <div id="sold91" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_23">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora92" src="img_small/moonflora_00092.png" alt="Moonflora 92" class="img-fluid" width="100%" >
+                    <div id="reserved92" class="centered" style="display:none">Reserved</div>
+                    <div id="sold92" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora93" src="img_small/moonflora_00093.png" alt="Moonflora 93" class="img-fluid" width="100%" >
+                    <div id="reserved93" class="centered" style="display:none">Reserved</div>
+                    <div id="sold93" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora94" src="img_small/moonflora_00094.png" alt="Moonflora 94" class="img-fluid" width="100%" >
+                    <div id="reserved94" class="centered" style="display:none">Reserved</div>
+                    <div id="sold94" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora95" src="img_small/moonflora_00095.png" alt="Moonflora 95" class="img-fluid" width="100%" >
+                    <div id="reserved95" class="centered" style="display:none">Reserved</div>
+                    <div id="sold95" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_24">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora96" src="img_small/moonflora_00096.png" alt="Moonflora 96" class="img-fluid" width="100%" >
+                    <div id="reserved96" class="centered" style="display:none">Reserved</div>
+                    <div id="sold96" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora97" src="img_small/moonflora_00097.png" alt="Moonflora 97" class="img-fluid" width="100%" >
+                    <div id="reserved97" class="centered" style="display:none">Reserved</div>
+                    <div id="sold97" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora98" src="img_small/moonflora_00098.png" alt="Moonflora 98" class="img-fluid" width="100%" >
+                    <div id="reserved98" class="centered" style="display:none">Reserved</div>
+                    <div id="sold98" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora99" src="img_small/moonflora_00099.png" alt="Moonflora 99" class="img-fluid" width="100%" >
+                    <div id="reserved99" class="centered" style="display:none">Reserved</div>
+                    <div id="sold99" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_25">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora100" src="img_small/moonflora_00100.png" alt="Moonflora 100" class="img-fluid" width="100%" >
+                    <div id="reserved100" class="centered" style="display:none">Reserved</div>
+                    <div id="sold100" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora101" src="img_small/moonflora_00101.png" alt="Moonflora 101" class="img-fluid" width="100%" >
+                    <div id="reserved101" class="centered" style="display:none">Reserved</div>
+                    <div id="sold101" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora102" src="img_small/moonflora_00102.png" alt="Moonflora 102" class="img-fluid" width="100%" >
+                    <div id="reserved102" class="centered" style="display:none">Reserved</div>
+                    <div id="sold102" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora103" src="img_small/moonflora_00103.png" alt="Moonflora 103" class="img-fluid" width="100%" >
+                    <div id="reserved103" class="centered" style="display:none">Reserved</div>
+                    <div id="sold103" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_26">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora104" src="img_small/moonflora_00104.png" alt="Moonflora 104" class="img-fluid" width="100%" >
+                    <div id="reserved104" class="centered" style="display:none">Reserved</div>
+                    <div id="sold104" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora105" src="img_small/moonflora_00105.png" alt="Moonflora 105" class="img-fluid" width="100%" >
+                    <div id="reserved105" class="centered" style="display:none">Reserved</div>
+                    <div id="sold105" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora106" src="img_small/moonflora_00106.png" alt="Moonflora 106" class="img-fluid" width="100%" >
+                    <div id="reserved106" class="centered" style="display:none">Reserved</div>
+                    <div id="sold106" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora107" src="img_small/moonflora_00107.png" alt="Moonflora 107" class="img-fluid" width="100%" >
+                    <div id="reserved107" class="centered" style="display:none">Reserved</div>
+                    <div id="sold107" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_27">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora108" src="img_small/moonflora_00108.png" alt="Moonflora 108" class="img-fluid" width="100%" >
+                    <div id="reserved108" class="centered" style="display:none">Reserved</div>
+                    <div id="sold108" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora109" src="img_small/moonflora_00109.png" alt="Moonflora 109" class="img-fluid" width="100%" >
+                    <div id="reserved109" class="centered" style="display:none">Reserved</div>
+                    <div id="sold109" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora110" src="img_small/moonflora_00110.png" alt="Moonflora 110" class="img-fluid" width="100%" >
+                    <div id="reserved110" class="centered" style="display:none">Reserved</div>
+                    <div id="sold110" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora111" src="img_small/moonflora_00111.png" alt="Moonflora 111" class="img-fluid" width="100%" >
+                    <div id="reserved111" class="centered" style="display:none">Reserved</div>
+                    <div id="sold111" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_28">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora112" src="img_small/moonflora_00112.png" alt="Moonflora 112" class="img-fluid" width="100%" >
+                    <div id="reserved112" class="centered" style="display:none">Reserved</div>
+                    <div id="sold112" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora113" src="img_small/moonflora_00113.png" alt="Moonflora 113" class="img-fluid" width="100%" >
+                    <div id="reserved113" class="centered" style="display:none">Reserved</div>
+                    <div id="sold113" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora114" src="img_small/moonflora_00114.png" alt="Moonflora 114" class="img-fluid" width="100%" >
+                    <div id="reserved114" class="centered" style="display:none">Reserved</div>
+                    <div id="sold114" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora115" src="img_small/moonflora_00115.png" alt="Moonflora 115" class="img-fluid" width="100%" >
+                    <div id="reserved115" class="centered" style="display:none">Reserved</div>
+                    <div id="sold115" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_29">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora116" src="img_small/moonflora_00116.png" alt="Moonflora 116" class="img-fluid" width="100%" >
+                    <div id="reserved116" class="centered" style="display:none">Reserved</div>
+                    <div id="sold116" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora117" src="img_small/moonflora_00117.png" alt="Moonflora 117" class="img-fluid" width="100%" >
+                    <div id="reserved117" class="centered" style="display:none">Reserved</div>
+                    <div id="sold117" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora118" src="img_small/moonflora_00118.png" alt="Moonflora 118" class="img-fluid" width="100%" >
+                    <div id="reserved118" class="centered" style="display:none">Reserved</div>
+                    <div id="sold118" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora119" src="img_small/moonflora_00119.png" alt="Moonflora 119" class="img-fluid" width="100%" >
+                    <div id="reserved119" class="centered" style="display:none">Reserved</div>
+                    <div id="sold119" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_30">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora120" src="img_small/moonflora_00120.png" alt="Moonflora 120" class="img-fluid" width="100%" >
+                    <div id="reserved120" class="centered" style="display:none">Reserved</div>
+                    <div id="sold120" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora121" src="img_small/moonflora_00121.png" alt="Moonflora 121" class="img-fluid" width="100%" >
+                    <div id="reserved121" class="centered" style="display:none">Reserved</div>
+                    <div id="sold121" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora122" src="img_small/moonflora_00122.png" alt="Moonflora 122" class="img-fluid" width="100%" >
+                    <div id="reserved122" class="centered" style="display:none">Reserved</div>
+                    <div id="sold122" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora123" src="img_small/moonflora_00123.png" alt="Moonflora 123" class="img-fluid" width="100%" >
+                    <div id="reserved123" class="centered" style="display:none">Reserved</div>
+                    <div id="sold123" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info" id="presale_31">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora124" src="img_small/moonflora_00124.png" alt="Moonflora 124" class="img-fluid" width="100%" >
+                    <div id="reserved124" class="centered" style="display:none">Reserved</div>
+                    <div id="sold124" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora125" src="img_small/moonflora_00125.png" alt="Moonflora 125" class="img-fluid" width="100%" >
+                    <div id="reserved125" class="centered" style="display:none">Reserved</div>
+                    <div id="sold125" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora126" src="img_small/moonflora_00126.png" alt="Moonflora 126" class="img-fluid" width="100%" >
+                    <div id="reserved126" class="centered" style="display:none">Reserved</div>
+                    <div id="sold126" class="centereds" style="display:none">Sold</div>
+
+                </div>
+                <div class="col-md-3 features-rightcol wp3">
+                    <img id="flora127" src="img_small/moonflora_00127.png" alt="Moonflora 127" class="img-fluid" width="100%" >
+                    <div id="reserved127" class="centered" style="display:none">Reserved</div>
+                    <div id="sold127" class="centereds" style="display:none">Sold</div>
+
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            for (var i=0;i<128;i++){
+                var img = document.getElementById("flora"+i);
+                var modalImg = document.getElementById("modal_img");
+                var captionText = document.getElementById("caption");
+                img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = 'img/cryptoflora'+this.src.slice(-10);
+                captionText.innerHTML = this.alt;
+                }
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close2")[0];
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                modal.style.display = "none";
+                }
+            }
+
+            var presale_data = {
+                0:'sold',
+                11:'reserved',
+                23:'sold',
+                27:'sold',
+                33:'sold',
+                35:'sold',
+                47:'sold',
+                53:'sold',
+                68:'sold',
+                84:'reserved',
+                95:'sold'
+            }
+
+            for (const [key, value] of Object.entries(presale_data)) {
+                console.log(key)
+                if (value==='reserved'){
+                    var reserved = document.getElementById("reserved"+key);
+                    reserved.style.display='block';
+                }
+                if (value==='sold'){
+                    var sold = document.getElementById("sold"+key);
+                    sold.style.display='block';
+                }
+            }
+
+
+
+        </script>
+
+      <footer>
+        <div class="container">
+          <!--<div class="row">
+            <div class="col-md-4">
+              <p>Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. Maecenas diam est, venenatis vitae dui in, vestibulum mollis arcu. Donec eu nibh tincidunt, dapibus sem eu, aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
+            </div>
+            <div class="col-md-3">
+              <p>aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
+            </div>
+            <div class="col-md-2 col-md-offset-3">
+              <ul class="footer-nav">
+                <li><a href="#">Get Started Tutorial</a></li>
+                <li><a href="#">Introduction Video</a></li>
+                <li><a href="#">See the Features</a></li>
+                <li><a href="#">Download a Trial</a></li>
+                <li><a href="#">Get in Touch!</a></li>
+              </ul>
+            </div>
+          </div>
+        -->
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <!--<a href="#" class="badge-btn">Badge Button</a>-->
+              <p class="footer-credit">Moonflora by <a href="https://twitter.com/PobbleArt">@PobbleArt</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/jquery.fancybox.pack.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/scripts.js?v=1.7"></script>
+      <script src="js/jquery.flexslider.js"></script>
+      <script src="js/jquery.smooth-scroll.js"></script>
+      <script src="js/modernizr.js"></script>
+      <script src="js/waypoints.min.js"></script>
+    </body>
+  </html>
